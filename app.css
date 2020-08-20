@@ -54,20 +54,7 @@ html body{
     }  
     
 }
-.cursor
-{
-    display: inline-block;
-    width: 3px;
-    background-color: white;
-    margin-left: 0.3rem;
-    animation: blink 1s infinite;
-}
-@keyframes blink
-{
-    0%{background-color: white;}
-    50%{background-color: transparent;}
-    100%{background-color: white;}
-}
+
 #videosList 
 {
      display: flex;
@@ -97,6 +84,13 @@ html body{
     .video
     {
         width: 400px;
+    }
+}
+@media (max-width:300px)
+{
+    .video
+    {
+        width: 300px;
     }
 }
 .video:hover
