@@ -1,0 +1,115 @@
+html body{
+    font-family: 'Rubik', sans-serif;
+}
+#top-section
+{
+    min-height: 400px;
+    /* background-image: url("./image.jpg"); */
+    background-color: #D0D3D4;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+}
+#intro1
+{
+    min-height: 70px;
+    padding-left: 1.2rem;
+    font-weight: 900;
+    font-size: 3rem;
+   
+}
+#intro2
+{
+    font-weight: 900;
+    padding-left: 1.2rem;
+    font-size: 2.1rem;
+}
+#intro3
+{
+    font-weight: 900;
+    padding-left: 1.2rem;
+    font-size: 1.7rem;
+}
+@media (max-width:600px)
+{
+    #intro1
+    {
+        font-size: 2.3rem;
+    }    
+    #intro2
+    {
+        /* position: fixed; */
+        font-weight: 900;
+        padding-left: 1.2rem;
+        font-size: 1.8rem;
+    }
+    #intro3
+    {
+        /* position: fixed; */
+        font-weight: 700;
+        padding-left: 1.2rem;
+        font-size: 1.5rem;
+    }  
+    
+}
+.cursor
+{
+    display: inline-block;
+    width: 3px;
+    background-color: white;
+    margin-left: 0.3rem;
+    animation: blink 1s infinite;
+}
+@keyframes blink
+{
+    0%{background-color: white;}
+    50%{background-color: transparent;}
+    100%{background-color: white;}
+}
+#videosList 
+{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+} 
+.video {
+   
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    width: 400px;
+    border:1px solid #D0D3D4;
+    
+}
+.p1
+{
+    background: url("./github.png") no-repeat;
+    background-size: 100%; 
+}
+.p2
+{
+    background: url("./Accordion.png") no-repeat;
+    background-size: 100%; 
+}
+@media (max-width:500px)
+{
+    .video
+    {
+        width: 400px;
+    }
+}
+.video:hover
+{
+    border-radius:2rem ;
+    box-shadow: 0 10px 10px 10px rgba(51, 109, 184,0.2);
+}
+video
+{
+    width: 100%;
+    border-radius: 2rem;
+}
+   /* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+       display:none !important;
+   }
